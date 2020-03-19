@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using GpProject.Models;
 
 namespace GpProject.Data
 {
@@ -12,5 +13,7 @@ namespace GpProject.Data
             : base(options)
         {
         }
+
+        public DbSet<Article> Article { get; set; }
     }
 }
